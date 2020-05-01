@@ -1,4 +1,5 @@
 venv
-gallery/__pycache__
+Item/__pycache__
+Item/migrations/__pycache__/
 Website/__pycache__
 Website/views/__pycache__
