@@ -22,3 +22,16 @@ How to create your model in the database (i.e. the db.sqlite3)
 1. After you created the app, and the models in the Django app
 2. Run the command line 'python manage.py makemigrations'. You may need to run 'python3 manage.py makemigrations'
 3. Alternative: go to 'Tools' -> Run manage.py Task, then type 'makemigrations'
+This make migration is used to create a mapping file in python. In order to create the table in the db,
+you need to run 'migrate'
+
+How to add data into your db?
+1. Run command 'python3 manage.py createsuperuser', then give a username and password
+2. Navigate to http://127.0.0.1:8000/admin/login/?next=/admin/ and login with your username and password
+3. Navigate to the relevant table and then add rows in the tables
+
+How to pass the object to the rendering page?
+1. Navigate to the relevant view page (.py page)
+2. In the render method, not only pass the name of the html page, but also the parameter.
+The parameter is a dictionary with all the data from the db
+3. In the html page, use add the code to loop through the objects and echo the content
