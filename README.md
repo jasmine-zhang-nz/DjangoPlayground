@@ -42,7 +42,10 @@ Run the command 'python3 manage.py makemigrations' to ensure the db create the t
 
 How to use image field in PyCharm
 1. Install pillow
-2. Go to your model class and use the image field to upload your images
+2. Go to your model class and use the 'ImageField' to upload your images
+3. In setting.py file, define the media url and media root
+4. add these to urlpatterns by appending static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
+5. In order to display the image on the website, you need to add a <img> tag, the source is the url of the image
 
 How to manage your packages for a project
 1. Navigate to the option 'PyCharm' and select 'Preferences' (This is different for Windows System)
