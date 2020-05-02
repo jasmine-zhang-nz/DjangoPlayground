@@ -35,3 +35,17 @@ How to pass the object to the rendering page?
 2. In the render method, not only pass the name of the html page, but also the parameter.
 The parameter is a dictionary with all the data from the db
 3. In the html page, use add the code to loop through the objects and echo the content
+
+Important:
+Everytime when you change the model, you need to migrate it to the database
+Run the command 'python3 manage.py makemigrations' to ensure the db create the table correctly
+
+How to use image field in PyCharm
+1. Install pillow
+2. Go to your model class and use the image field to upload your images
+
+How to manage your packages for a project
+1. Navigate to the option 'PyCharm' and select 'Preferences' (This is different for Windows System)
+2. Select your project and then select 'Project Interpreter'
+3. Click the '+' button to install a new package
+4. You can select specific version for the new added package

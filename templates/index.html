@@ -7,7 +7,9 @@
 <body>
 <h1>Welcome</h1>
 {% for item in items.all %}
-{{ item.description}}
+    {{ item.description}}
+    <br>
+    <img src="{{ item.image.url}}">
 {% endfor %}
 </body>
 </html>
