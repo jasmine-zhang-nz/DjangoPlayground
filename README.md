@@ -52,3 +52,14 @@ How to manage your packages for a project
 2. Select your project and then select 'Project Interpreter'
 3. Click the '+' button to install a new package
 4. You can select specific version for the new added package
+
+How to navigate to a single page from a list
+1. In the urls.py, need to specify path('<int:item_id>', views.function),
+2. In the view.py, define this function (the parameter is request and item_id)
+3. Get the object from the database, by specifying the model name and the pk (get_object_or_404())
+4. pass this object to the html page
+
+How to organize your static files
+1. Create a STATIC_ROOT, this folder will collect all the static files
+2. Create a STATICFILES_DIR, this folder has all the static folders in each Django apps
+3. 
